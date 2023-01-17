@@ -1,4 +1,9 @@
-# Three.js Journey
+# Fox Model by Davide Barca
+
+## Final Result
+<a href="" target="_blank">
+  <img src="/static/Fox/finalRender.png">
+</a>
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).

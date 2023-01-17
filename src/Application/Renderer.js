@@ -20,7 +20,11 @@ export default class Renderer{
         })
         this.renderer.setSize(this.sizes.width, this.sizes.height)
         this.renderer.setPixelRatio(this.sizes.pixelRatio)
-
+        this.renderer.physicallyCorrectLights = true
+        this.renderer.outputEncoding = THREE.sRGBEncoding
+        this.renderer.toneMapping = THREE.ReinhardToneMapping
+        this.renderer.toneMappingExposure = 1
+        this.renderer.setClearColor('#312A2A')
         console.log('renderer created')
     }
 

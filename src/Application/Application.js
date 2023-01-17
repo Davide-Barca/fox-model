@@ -5,6 +5,8 @@ import Time from './Utils/Time.js'
 import Camera from './Camera.js'
 import World from './World/World.js'
 import Renderer from './Renderer.js'
+import Resources from './Utils/Resources.js'
+import sources from './sources.js'
 
 let instance = null
 
@@ -24,6 +26,7 @@ export default class Application{
         this.time = new Time()
 
         this.scene = new THREE.Scene()
+        this.resources = new Resources(sources)
         this.camera = new Camera()
         this.world = new World()
         this.renderer = new Renderer()
